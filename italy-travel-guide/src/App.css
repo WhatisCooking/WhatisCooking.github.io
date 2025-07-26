@@ -1,0 +1,21 @@
+/* Reset and base styles for Italy Travel Guide */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: left;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Remove any default styling conflicts */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
