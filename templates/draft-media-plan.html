@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Media Plan</title>
+    <style>body{font-family:Arial,sans-serif;background:#f4f6f8;margin:0;padding:0;} .container{max-width:500px;margin:50px auto;background:#fff;padding:30px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);} h2{text-align:center;margin-bottom:30px;} label{display:block;margin-bottom:8px;font-weight:bold;} input[type="date"]{width:48%;padding:8px;margin-bottom:18px;border:1px solid #ccc;border-radius:4px;} select{width:100%;padding:8px;margin-bottom:18px;border:1px solid #ccc;border-radius:4px;} button{width:100%;padding:10px;background:#4267B2;color:#fff;border:none;border-radius:4px;font-size:16px;cursor:pointer;} button:hover{background:#365899;}</style>
+</head>
+<body>
+    <div class="container">
+        <h2>Draft Media Plan</h2>
+        <form method="POST">
+            <label for="abtest">A/B Test Design</label>
+            <select id="abtest" name="abtest">
+                <option value="none">None</option>
+                <option value="creative">Creative</option>
+                <option value="audience">Audience</option>
+                <option value="placement">Placement</option>
+            </select>
+            <label for="timeline">Campaign Timeline</label>
+            <input type="date" id="start" name="start" required> to <input type="date" id="end" name="end" required>
+            <button type="submit">Next: Review & Launch</button>
+        </form>
+        <div style="margin-top:40px;text-align:center;">
+            <a href="review-launch.html">Next: Review & Launch</a>
+        </div>
+    </div>
+</body>
+</html>
