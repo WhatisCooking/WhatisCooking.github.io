@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/B Test Comparison</title>
+    <style>body{font-family:Arial,sans-serif;background:#f4f6f8;margin:0;padding:0;} .container{max-width:500px;margin:50px auto;background:#fff;padding:30px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);} h2{text-align:center;margin-bottom:30px;} table{width:100%;border-collapse:collapse;margin-bottom:20px;} th,td{padding:10px;text-align:center;border-bottom:1px solid #eee;} th{background:#4267B2;color:#fff;} .recommendation{background:#eaf6ea;padding:15px;border-radius:6px;text-align:center;font-weight:bold;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>A/B Test Comparison</h2>
+        <table>
+            <tr>
+                <th>Version</th>
+                <th>Accounts Created</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>{{ count_a }}</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>{{ count_b }}</td>
+            </tr>
+        </table>
+        <div class="recommendation">
+            {{ recommendation }}
+        </div>
+        <div style="margin-top:40px;text-align:center;">
+            <a href="/">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
