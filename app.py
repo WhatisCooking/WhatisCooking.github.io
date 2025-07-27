@@ -21,6 +21,7 @@ def log_event(event, version=None, user_id=None):
     })
 
 # --- A/B Test Landing ---
+# --- Randomly and fairly assign user to A/B landing page, persist in cookie. ---
 @app.route('/')
 def ab_test_landing():
     """Randomly and fairly assign user to A/B landing page, persist in cookie."""
