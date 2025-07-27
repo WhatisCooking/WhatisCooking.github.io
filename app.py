@@ -1,18 +1,3 @@
-# --- A/B Test Comparison & Recommendation ---
-@app.route('/ab-comparison', methods=['GET'])
-def ab_comparison():
-    # Compare account creation counts for A and B
-    count_a = account_counts.get('A', 0)
-    count_b = account_counts.get('B', 0)
-    recommendation = None
-    if count_a > count_b:
-        recommendation = 'Version A is recommended based on higher account creation.'
-    elif count_b > count_a:
-        recommendation = 'Version B is recommended based on higher account creation.'
-    else:
-        recommendation = 'Both versions performed equally. Consider further testing.'
-    return render_template('ab-comparison.html', count_a=count_a, count_b=count_b, recommendation=recommendation)
-
 
 import time
 import random
@@ -80,6 +65,22 @@ def stats():
         'account_counts': dict(account_counts),
         'user_events': user_events
     })
+
+# --- A/B Test Comparison & Recommendation ---
+@app.route('/ab-comparison', methods=['GET'])
+def ab_comparison():
+    # Compare account creation counts for A and B
+    count_a = account_counts.get('A', 0)
+    count_b = account_counts.get('B', 0)
+    recommendation = None
+    if count_a > count_b:
+        recommendation = 'Version A is recommended based on higher account creation.'
+    elif count_b > count_a:
+        recommendation = 'Version B is recommended based on higher account creation.'
+    else:
+        recommendation = 'Both versions performed equally. Consider further testing.'
+    return render_template('ab-comparison.html', count_a=count_a, count_b=count_b, recommendation=recommendation)
+
 
 # --- Analyze Product Page ---
 @app.route('/analyze-product', methods=['GET', 'POST'])
