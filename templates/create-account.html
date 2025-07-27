@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your account and connect your Meta ad account to launch campaigns easily.">
+    <meta name="keywords" content="Meta ads, signup, campaign, creative, targeting, marketing">
     <title>Create Account & Connect Meta Ad Account</title>
     <style>
         body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 0; padding: 0; }
@@ -25,25 +27,32 @@
         body: JSON.stringify({version: 'A'})
     });
     </script>
-    <div class="container">
-        <h2>Create Account</h2>
-        <form method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            <input type="hidden" name="version" value="A">
-            <button type="submit">Create Account</button>
-        </form>
-        <div class="meta-connect">
-            <h3>Connect Your Meta Ad Account</h3>
-            <button class="meta-btn" onclick="window.location.href='enter-product-url.html'">Connect Meta Ad Account</button>
-        </div>
-        <div style="margin-top:40px;text-align:center;">
-            <a href="enter-product-url.html">Next: Enter Product URL</a>
-        </div>
-    </div>
+    <main>
+        <section class="container">
+            <h1>Create Account</h1>
+            <form method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <input type="hidden" name="version" value="A">
+                <button type="submit">Create Account</button>
+            </form>
+            <section class="meta-connect">
+                <h2>Connect Your Meta Ad Account</h2>
+                <button class="meta-btn" onclick="window.location.href='enter-product-url.html'">Connect Meta Ad Account</button>
+            </section>
+            <nav style="margin-top:40px;text-align:center;">
+                <a href="enter-product-url.html">Next: Enter Product URL</a>
+            </nav>
+        </section>
+    </main>
+    <footer style="text-align:center; margin-top:40px;">
+        <!-- Example image optimization -->
+        <!-- <img src="/static/logo.webp" alt="Site Logo" width="120" height="120" loading="lazy"> -->
+        <small>&copy; 2025 WhatisCooking</small>
+    </footer>
 </body>
 </html>

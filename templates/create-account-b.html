@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join and launch your Meta ad campaign with smart targeting and creative generation.">
+    <meta name="keywords" content="Meta ads, signup, campaign, creative, targeting, marketing">
     <title>Join & Launch Your Meta Ad Campaign</title>
     <style>
         body { font-family: 'Segoe UI', Arial, sans-serif; background: linear-gradient(120deg, #f4f6f8 60%, #e3f0ff 100%); margin: 0; padding: 0; }
@@ -29,29 +31,36 @@
         body: JSON.stringify({version: 'B'})
     });
     </script>
-    <div class="container">
-        <h1>Get Started Free</h1>
-        <div class="subtitle">Create your account and launch your Meta ad campaign in minutes!</div>
-        <ul class="benefits">
-            <li>🚀 Fast campaign setup</li>
-            <li>🎯 Smart audience targeting</li>
-            <li>💡 AI-powered creative generation</li>
-            <li>📊 Real-time performance monitoring</li>
-        </ul>
-        <form method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            <input type="hidden" name="version" value="B">
-            <button type="submit">Create My Free Account</button>
-        </form>
-        <div class="meta-connect">
-            <button class="meta-btn" onclick="window.location.href='enter-product-url.html'">Connect Meta Ad Account</button>
-        </div>
-        <div class="cta">No credit card required. Start your first campaign today!</div>
-    </div>
+    <main>
+        <section class="container">
+            <h1>Get Started Free</h1>
+            <div class="subtitle">Create your account and launch your Meta ad campaign in minutes!</div>
+            <ul class="benefits">
+                <li>🚀 Fast campaign setup</li>
+                <li>🎯 Smart audience targeting</li>
+                <li>💡 AI-powered creative generation</li>
+                <li>📊 Real-time performance monitoring</li>
+            </ul>
+            <form method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <input type="hidden" name="version" value="B">
+                <button type="submit">Create My Free Account</button>
+            </form>
+            <section class="meta-connect">
+                <button class="meta-btn" onclick="window.location.href='enter-product-url.html'">Connect Meta Ad Account</button>
+            </section>
+            <div class="cta">No credit card required. Start your first campaign today!</div>
+        </section>
+    </main>
+    <footer style="text-align:center; margin-top:40px;">
+        <!-- Example image optimization -->
+        <!-- <img src="/static/logo.webp" alt="Site Logo" width="120" height="120" loading="lazy"> -->
+        <small>&copy; 2025 WhatisCooking</small>
+    </footer>
 </body>
 </html>
